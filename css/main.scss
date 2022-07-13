@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700&family=Dynalight&family=EB+Garamond&display=swap');
+$Dyna:'Dynalight', cursive;
+$Chiv: 'Chivo', sans-serif;
+$EB: 'EB Garamond', serif;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: $Chiv;
+}
+
+.owl-nav{
+    font-size: 40px;
+    color: white;
+}
+
+.img-cover{
+    background-image: linear-gradient(rgba(51, 65, 47, 0), rgba(255, 255, 255, 0.781)),url('../img/1.png');
+    height: 800px;
+    width: 100%;
+    object-fit: cover;
+    background-position: 50% 15%;
+    background-repeat: no-repeat;
+    .text{
+        h1{
+            font-family: $Dyna;
+            font-size: 125px;
+        }
+        .strip{
+            font-family: $EB;
+            font-size: 48px;
+            margin-bottom: 190px;
+        }
+    }
+}
+
+.merried{
+    .dyna{
+        font-family: $Dyna;
+        font-size: 110px;
+    }
+    h2{
+        font-family: $Dyna;
+        font-size: 55px;
+    }
+}
+
+.info-maride{
+    background-image: linear-gradient(rgba(50, 66, 45, 0.7), rgba(50, 66, 45, 0.7)),url('../img/2.png');
+    height: 800px;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    margin-bottom: 350px;
+
+    .text{
+        padding-top: 160px;
+        p{
+            font-family: $Dyna;
+            font-size: 110px;
+        }
+    }
+     .card{
+        margin-top: 50px;
+        padding: 20px;
+        width: 60%;
+        height: 500px;
+        .card-title{
+            font-family: $Dyna;
+            font-size: 70px;
+        }
+     }
+}
+
+.gallery{
+    h1{
+        font-family: $Dyna;
+        font-size: 110px;
+    }
+}
+
+
+.our{
+    margin: auto;
+    color: #465D3E;
+    margin-bottom: 120px;
+    h1{
+        font-family: $Dyna;
+        font-size: 110px;
+    }
+    .card{
+        width: 60%;
+        margin: 0 auto;
+        float: none;
+        margin-bottom: 10px;
+    }
+}
+
+
+.contact{
+    background-image: linear-gradient(rgba(70, 93, 62, 0.5), rgba(70, 93, 62, 0.5)),url('../img/4.png');
+    background-position: center;
+    height: 800px;
+
+    form{
+        h1{
+            font-family: $Dyna;
+            font-size: 90px;
+        }
+    }
+    .btn-send{
+        background-color: #32422D;
+        width: 100px;
+    }
+    
+}
+
+.gift{
+    color: #32422D;
+    .dyna{
+        font-family: $Dyna;
+        font-size: 90px;
+    }
+    .card{
+        background-color: #32422D;
+        margin: auto;
+        width: 50%;
+        color: white;
+    }
+
+    .qr{
+        width: 200px;
+        border-radius: 20px;
+    }
+}
+
+footer{
+    height: 120px;
+    background-color: #465D3EB2;
+    margin-top: 200px;
+    button{
+        margin-right: 10px;
+    }
+}
