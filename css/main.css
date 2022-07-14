@@ -6,6 +6,9 @@
 }
 
 body {
+  background-image: url("../img/aback.png");
+  -o-object-fit: cover;
+     object-fit: cover;
   overflow-x: hidden;
   font-family: "Chivo", sans-serif;
 }
@@ -21,8 +24,11 @@ body {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  background-position: 50% 15%;
+  background-position: center;
   background-repeat: no-repeat;
+}
+.img-cover .text {
+  margin-top: 160px;
 }
 .img-cover .text h1 {
   font-family: "Dynalight", cursive;
@@ -33,17 +39,23 @@ body {
   font-size: 48px;
   margin-bottom: 190px;
 }
+.img-cover .text .text-break {
+  color: #32422D;
+}
 
-.merried .dyna {
+.profile-marriege {
+  color: #32422D;
+}
+.profile-marriege .dyna {
   font-family: "Dynalight", cursive;
   font-size: 110px;
 }
-.merried h2 {
+.profile-marriege h2 {
   font-family: "Dynalight", cursive;
   font-size: 55px;
 }
 
-.info-maride {
+.info-marriege {
   background-image: linear-gradient(rgba(50, 66, 45, 0.7), rgba(50, 66, 45, 0.7)), url("../img/2.png");
   height: 800px;
   width: 100%;
@@ -54,39 +66,47 @@ body {
   background-attachment: fixed;
   margin-bottom: 350px;
 }
-.info-maride .text {
+.info-marriege .text {
   padding-top: 160px;
 }
-.info-maride .text p {
+.info-marriege .text p {
   font-family: "Dynalight", cursive;
   font-size: 110px;
 }
-.info-maride .card {
+.info-marriege .card {
   margin-top: 50px;
   padding: 20px;
   width: 60%;
   height: 500px;
 }
-.info-maride .card .card-title {
+.info-marriege .card .card-title {
   font-family: "Dynalight", cursive;
-  font-size: 70px;
+  font-size: 80px;
+}
+.info-marriege .card button {
+  width: 300px;
+  font-size: 26px;
 }
 
-.gallery h1 {
+.gallery-marriege h1 {
+  color: #32422D;
   font-family: "Dynalight", cursive;
   font-size: 110px;
 }
+.gallery-marriege .owl-one .item img {
+  border: 10px solid white;
+}
 
-.our {
+.story-marriege {
   margin: auto;
   color: #465D3E;
   margin-bottom: 120px;
 }
-.our h1 {
+.story-marriege h1 {
   font-family: "Dynalight", cursive;
   font-size: 110px;
 }
-.our .card {
+.story-marriege .card {
   width: 60%;
   margin: 0 auto;
   float: none;
@@ -132,4 +152,44 @@ footer {
 }
 footer button {
   margin-right: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .img-cover {
+    background-position: 30% 40%;
+  }
+  .img-cover .text h1 {
+    font-size: 90px;
+  }
+  .img-cover .text .strip {
+    font-size: 28px;
+    margin-bottom: 150px;
+  }
+  .info-maride {
+    margin-bottom: 800px;
+  }
+  .info-maride .card {
+    width: 300px;
+    height: 800px;
+  }
+  .info-maride .card .card-title {
+    font-size: 70px;
+  }
+  .info-maride .card button {
+    width: 130px;
+    font-size: 17px;
+    margin-bottom: 15px;
+  }
+  .our .card {
+    width: 300px;
+  }
+  .contact {
+    height: 900px;
+  }
+  .contact form h1 {
+    font-size: 60px;
+  }
+  .gift .card {
+    width: 80%;
+  }
 }/*# sourceMappingURL=main.css.map */

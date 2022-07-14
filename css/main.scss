@@ -10,6 +10,8 @@ $EB: 'EB Garamond', serif;
 }
 
 body{
+    background-image: url('../img/aback.png'); 
+    object-fit:cover; 
     overflow-x: hidden;
     font-family: $Chiv;
 }
@@ -24,9 +26,10 @@ body{
     height: 800px;
     width: 100%;
     object-fit: cover;
-    background-position: 50% 15%;
+    background-position: center;
     background-repeat: no-repeat;
     .text{
+        margin-top: 160px;
         h1{
             font-family: $Dyna;
             font-size: 125px;
@@ -36,10 +39,14 @@ body{
             font-size: 48px;
             margin-bottom: 190px;
         }
+        .text-break{
+            color: #32422D;
+        }
     }
 }
 
-.merried{
+.profile-marriege{
+    color: #32422D;
     .dyna{
         font-family: $Dyna;
         font-size: 110px;
@@ -50,7 +57,7 @@ body{
     }
 }
 
-.info-maride{
+.info-marriege{
     background-image: linear-gradient(rgba(50, 66, 45, 0.7), rgba(50, 66, 45, 0.7)),url('../img/2.png');
     height: 800px;
     width: 100%;
@@ -74,20 +81,33 @@ body{
         height: 500px;
         .card-title{
             font-family: $Dyna;
-            font-size: 70px;
+            font-size: 80px;
+        }
+        button{
+            width: 300px;
+            font-size: 26px;
         }
      }
 }
 
-.gallery{
+.gallery-marriege{
     h1{
+        color:#32422D;
         font-family: $Dyna;
         font-size: 110px;
+    }
+    .owl-one{
+        .item{
+            img{
+                border: 10px solid white;
+
+            }
+        }
     }
 }
 
 
-.our{
+.story-marriege{
     margin: auto;
     color: #465D3E;
     margin-bottom: 120px;
@@ -147,5 +167,57 @@ footer{
     margin-top: 200px;
     button{
         margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .img-cover{
+        background-position: 30% 40%;
+        .text{
+            h1{
+                font-size: 90px;
+            }
+            .strip{
+                font-size: 28px;
+                margin-bottom: 150px;
+            }
+        }
+    }
+
+    .info-maride{
+        margin-bottom: 800px;
+        .card{
+            width: 300px;
+            height: 800px;
+            .card-title{
+                font-size: 70px;
+            }
+            button{
+                width: 130px;
+                font-size: 17px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .our{
+        .card{
+            width: 300px;
+        }
+    }
+
+    .contact{
+        height: 900px;
+        form{
+            h1{
+                font-size: 60px;
+            }
+        }
+    }
+
+    .gift{
+        .card{
+            width: 80%;
+        }
     }
 }
